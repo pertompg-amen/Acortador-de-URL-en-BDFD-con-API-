@@ -43,13 +43,13 @@ Si dispones de un servidor VPS, un hosting dedicado o un dominio propio, puedes 
    ```
 
  2. **En el comando de BDFD:** Modifica la URL que se encuentra dentro de la función $httpGet para que apunte a tu nueva dirección:
-   ```text
+   ```rb
    $httpGet[https://tu-dominio-o-vps.com/acortar?url=$var[url]]
    
    ```
 ## 🐍 Servidor Backend (Python + Flask)
 Este es el código del servidor que procesa las peticiones de Discord, genera identificadores alfanuméricos únicos que no se repiten jamás y maneja la base de datos local mediante SQLite de forma automática.
-Lo admito, use IA porque no se hacer esto:
+
 ```python
 import string
 import secrets
@@ -129,3 +129,5 @@ except Exception:
     pass
 
 ```
+
+Darle las gracias a [TwisSpark](https://discord.gg/NKDTAnQKXC) inspirarme a usar Python en algun proyecto 
