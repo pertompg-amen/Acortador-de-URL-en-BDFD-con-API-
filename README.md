@@ -35,19 +35,21 @@ $endif
 ## ⚙️ Modificación para VPS o Dominio Propio
 Si dispones de un servidor VPS, un hosting dedicado o un dominio propio, puedes clonar este proyecto y adaptarlo a tu marca en segundos. Solo debes modificar las siguientes líneas del entorno:
  1. **En el archivo de Python (flask_app.py):** Cambia el valor de la variable BASE_DOMINIO introduciendo tu dominio personalizado o la IP de tu VPS:
+(El flask_app.py lo digo por si el dominio propio es de PythonAnywhere)
 
    ```python
-   BASE_DOMINIO = "[https://tu-dominio-o-vps.com/](https://tu-dominio-o-vps.com/)"
+   BASE_DOMINIO = "https://tu-dominio-o-vps.com/"
    
    ```
 
  2. **En el comando de BDFD:** Modifica la URL que se encuentra dentro de la función $httpGet para que apunte a tu nueva dirección:
    ```text
-   $httpGet[[https://tu-dominio-o-vps.com/acortar?url=$var](https://tu-dominio-o-vps.com/acortar?url=$var)[url]]
+   $httpGet[https://tu-dominio-o-vps.com/acortar?url=$var[url]]
    
    ```
 ## 🐍 Servidor Backend (Python + Flask)
 Este es el código del servidor que procesa las peticiones de Discord, genera identificadores alfanuméricos únicos que no se repiten jamás y maneja la base de datos local mediante SQLite de forma automática.
+Lo admito, use IA porque no se hacer esto:
 ```python
 import string
 import secrets
