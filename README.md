@@ -31,6 +31,9 @@ $deletecommand
 $deleteIn[5s]
 $endif
 ```
+<div align="center">
+  <img src="https://i.ibb.co/7ddqz47m/Screenshot-20260624-232950-Discord.jpg" alt="Ejemplo del comando de BDFD acortador de URL's " width="500">
+</div>
 
 ## ⚙️ Modificación para VPS o Dominio Propio
 Si dispones de un servidor VPS, un hosting dedicado o un dominio propio, puedes clonar este proyecto y adaptarlo a tu marca en segundos. Solo debes modificar las siguientes líneas del entorno:
