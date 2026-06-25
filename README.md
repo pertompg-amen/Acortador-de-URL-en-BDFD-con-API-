@@ -6,12 +6,12 @@ Un sistema híbrido de acortado de URLs diseñado específicamente para **Bot De
 
 ## 🚀 Comando BDFD (Código Principal)
 
-Crea un comando en tu panel de BDFD con el disparador (trigger) que desees (por ejemplo: `!aurl` o `!acortar`) y pega el siguiente código **exactamente** como está:
+Crea un comando en tu panel de BDFD con el disparador (trigger) que desees (por ejemplo: `!aurl` o `!acortar`) y pega el siguiente código:
 
-```text
+```rb
 $nomention
 $var[url;$message]
-$httpGet[[https://mpgacortador.pythonanywhere.com/acortar?url=$var](https://mpgacortador.pythonanywhere.com/acortar?url=$var)[url]]
+$httpGet[https://mpgacortador.pythonanywhere.com/acortar?url=$var[url]]
 $if[$message==]
 ❌ ¡Por favor, introduce una URL para acortar!
 $deletecommand
