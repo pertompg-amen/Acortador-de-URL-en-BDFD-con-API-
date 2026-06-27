@@ -62,7 +62,7 @@ from flask import Flask, request, redirect, jsonify
 
 app = Flask(__name__)
 
-BASE_DOMINIO = "[https://mpgacortador.pythonanywhere.com/](https://mpgacortador.pythonanywhere.com/)"
+BASE_DOMINIO = "https://mpgacortador.pythonanywhere.com/"
 DB_PATH = os.path.join(os.path.dirname(__file__), 'urls.db')
 
 def init_db():
